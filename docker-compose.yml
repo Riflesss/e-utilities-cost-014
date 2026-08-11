@@ -31,7 +31,7 @@ services:
 
   backend:
     build: ./backend
-    image: ${DOCKERHUB_USERNAME:-yourname}/e-utilities-cost-backend:latest
+    image: ${DOCKERHUB_USERNAME:-yinyaodebaoyea}/e-utilities-cost-backend:latest
     container_name: eutil_backend
     restart: unless-stopped
     environment:
@@ -58,7 +58,7 @@ services:
       context: ./frontend
       args:
         VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:3000/api}
-    image: ${DOCKERHUB_USERNAME:-yourname}/e-utilities-cost-frontend:latest
+    image: ${DOCKERHUB_USERNAME:-yinyaodebaoyea}/e-utilities-cost-frontend:latest
     container_name: eutil_frontend
     restart: unless-stopped
     ports:
