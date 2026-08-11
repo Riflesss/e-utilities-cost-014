@@ -1,0 +1,60 @@
+# Node / package manager caches
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+.npm/
+.pnpm-store/
+.npmrc
+
+# Frontend / backend build caches
+frontend/dist/
+backend/dist/
+frontend/.vite/
+backend/.cache/
+.cache/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker / local data
+.docker/
+docker-compose.override.yml
+mysql-data/
+postgres-data/
+mariadb-data/
+volume-data/
+*.local
+
+# MariaDB / database local artifacts
+**/mariadb/**
+**/mysql/**
+*.sql.gz
+*.dump
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
